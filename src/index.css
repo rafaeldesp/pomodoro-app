@@ -104,3 +104,16 @@ body {
 .clicked {
     background: rgba(0,0,0, .6);
 }
+
+@media (max-width: 380px) {
+    .pomodoro button {
+
+        padding: 10px 30px;
+
+    }
+
+    .pomodoro .timer {
+        font-size: 5rem;
+        text-align: center;
+    }
+}
