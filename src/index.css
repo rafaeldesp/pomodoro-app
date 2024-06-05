@@ -1,0 +1,106 @@
+* {
+    padding: 0;
+    margin: 0;
+    outline: none;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: sans-serif;
+    background: rgb(224, 23, 224);
+    transition: background-color 300ms ease-in-out;
+    line-height: 1.5;
+}
+
+.container {
+    max-width: 640px;
+    margin: auto;
+}
+
+.working {
+    background: red;
+}
+
+.working .pomodoro {
+    background: rgb(253, 78, 78);
+    box-shadow: 0 0 10px rgba(0,0,0, .2);
+    color: white;
+}
+
+.hidden {
+    display: none;
+}
+
+.pomodoro {
+    background: rgb(231, 93, 231);
+    margin: 50px 20px;
+    padding: 20px;
+    border-radius: 4px;
+    box-shadow: 0 0 10px rgba(0,0,0, .4);
+}
+
+.pomodoro h2 {
+    font-size: 24px;
+    text-align: center;
+}
+
+.pomodoro .timer {
+    font-size: 6rem;
+    text-align: center;
+}
+
+.pomodoro .controls {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.pomodoro button {
+    background: rgba(224, 23, 224);
+    border: none;
+    cursor: pointer;
+    padding: 10px 50px;
+    border-radius: 3px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0, .4);
+}
+
+
+.working .pomodoro button {
+    background: red;
+    color: white;
+}
+
+.pomodoro .details {
+    text-align: center;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.pomodoro .pauseButton {
+    padding: 20px 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.pomodoro .pauseButton button {
+    background: rgba(224, 23, 224);
+    padding: 30px 70px;
+    font-size: 30px;
+    border-radius: 10%;
+    box-shadow: 0 0 10px rgba(0,0,0, .4);
+}
+
+.working .pomodoro .pauseButton button {
+    background: red;
+    padding: 30px 70px;
+    font-size: 30px;
+    border-radius: 10%;
+    box-shadow: 0 0 10px rgba(0,0,0, .4);
+}
+
+.clicked {
+    background: rgba(0,0,0, .6);
+}
