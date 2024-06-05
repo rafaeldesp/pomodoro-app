@@ -11,7 +11,7 @@ const audioStopWorking = new Audio(bellFinish)
 
 interface Props {
     longRestTime: SetStateAction<number>;
-    PomodoroTime: number;
+    pomodoroTime: number;
     shortTimeRest: number;
     longTimeRest: number;
     cycles: number;
@@ -52,9 +52,9 @@ export function PomodoroTimer(props: Props): JSX.Element {
         setTimeCounting(false);
         setWorking(true)
         setResting(false)
-        setMainTime(props.PomodoroTime)
+        setMainTime(props.pomodoroTime)
         audioStartWorking.play()
-    }, [setTimeCounting, setWorking, setResting, setMainTime, props.PomodoroTime])
+    }, [setTimeCounting, setWorking, setResting, setMainTime, props.pomodoroTime])
 
     useEffect(() => {
         if (working) document.body.classList.add('working');
