@@ -1,4 +1,4 @@
-import { useState, useEffect, useCallback, SetStateAction } from 'react';
+import { useState, useEffect, useCallback } from 'react';
 import { useInterval } from '../hooks/use-interval';
 import { Button } from './button';
 import { Timer } from './timer';
@@ -10,10 +10,9 @@ const audioStartWorking = new Audio(bellStart)
 const audioStopWorking = new Audio(bellFinish)
 
 interface Props {
-    longRestTime: SetStateAction<number>;
+    longRestTime: number;
     pomodoroTime: number;
     shortTimeRest: number;
-    longTimeRest: number;
     cycles: number;
 }
 
